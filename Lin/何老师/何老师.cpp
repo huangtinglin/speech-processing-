@@ -19,7 +19,8 @@
 #include<armadillo>
 using namespace std;
 using namespace arma;
-
+#define pi 3.1415926
+typedef mat WIN;
 int a = 5;
 
 class Segment {
@@ -131,8 +132,93 @@ Segment findSegment(mat express)
 	return soundSegment;
 }
 
+mat meta(int n) {
+	mat x(2, n + 1);
+	for (int i = 1; i <= n; i++) {
+		x(1, i) = i;
+	}
+	return x;
+}
+
+double mean(mat a) {
+	double s = 0;
+	for (int i = 1; i <= a.n_rows; i++) {
+		for (int j = 1; j < a.n_cols; j++) {
+			s += a(i, j);
+		}
+	}
+	return s / a.n_elem;
+}
+
+mat hanning(int wlen) {
+	mat p = meta(wlen / 2);
+	mat w(3, wlen / 2 + 1);
+
+	for (int i = 1; i <= wlen / 2; i++) {
+		double t = 0.5*(1 - cos(2 * pi*p(1, i) / (wlen + 1)));
+		w(1, i) = t;
+		w(2, wlen / 2 - i + 1) = t;
+	}
+	for (int j = 1; j <= 2; j++)
+		for (int i = 1; i <= wlen / 2; i++)
+			cout << w(j, i) << endl;
+
+	return w;
+}
+
+mat linsomoothm(mat x, int n) 
+{
+	if (n == -1)
+		n = 3;
+	//mat win = hanning(n);
+	mat win;
+	win << 0.75 << endr << 0.75 << endr;
+	mat s = sum(win);
+	win = win / s(0);
+	x.reshape(1, x.n_elem);
+	int len = x.n_elem;
+	mat y = zeros(len, 1);
+	if (n % 2 == 0) 
+	{
+		int l = n / 2;
+		mat x1(1, 1 + x.n_elem + l);
+		for (int i = 0; i < 1 + x.n_elem + l; i++) {
+			if (i == 0)
+				x1(i) = x(0);
+			else if (i >= x.n_elem + 1)
+				x1(i) = x(len - 1);
+			else
+				x1(i) = x(i - 1);
+		}
+		x = x1.t();
+	}
+	else {
+		int l = (n - 1) / 2;
+		mat x1(1, 1 + x.n_elem + 2);
+		for (int i = 0; i < 1 + x.n_elem + 2; i++) {
+			if (i == 0)
+				x1(i) = x(0);
+			else if (i >= x.n_elem + 1)
+				x1(i) = x(len-1);
+			else
+				x1(i) = x(i-1);
+		}
+		x = x1.t();
+	}
+	for (int i = 1; i <= len; i++) {
+		//cout << x.rows(i - 1, i + n - 2) << endl;
+		mat a = win % x.rows(i - 1, i + n - 2);
+		a = sum(a);
+		y(i - 1) = a(0);
+	}
+	return y;
+}
+
 int main()
 {
+	mat x = { 1,2,3,4,5,6,7,8,9 };
+	cout << linsomoothm(x, 2) << endl;
+
 	/*mat express(1, 68);
 	for (int i = 0; i < 50; i++) {
 		express(i) = i + 1;

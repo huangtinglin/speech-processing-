@@ -1,14 +1,20 @@
 ﻿  何老师.cpp
-何老师.cpp(43): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-何老师.cpp(53): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-何老师.cpp(69): warning C4018: “<”: 有符号/无符号不匹配
-何老师.cpp(70): warning C4244: “参数”: 从“double”转换到“const arma::uword”，可能丢失数据
-何老师.cpp(103): warning C4018: “<”: 有符号/无符号不匹配
-何老师.cpp(112): warning C4018: “<=”: 有符号/无符号不匹配
-何老师.cpp(119): warning C4018: “<=”: 有符号/无符号不匹配
+何老师.cpp(44): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(54): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(70): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(71): warning C4244: “参数”: 从“double”转换到“const arma::uword”，可能丢失数据
+何老师.cpp(104): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(113): warning C4018: “<=”: 有符号/无符号不匹配
+何老师.cpp(120): warning C4018: “<=”: 有符号/无符号不匹配
+何老师.cpp(145): warning C4018: “<=”: 有符号/无符号不匹配
+何老师.cpp(146): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(185): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(188): warning C4018: “>=”: 有符号/无符号不匹配
+何老师.cpp(198): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(201): warning C4018: “>=”: 有符号/无符号不匹配
   正在生成代码
-  15 of 92 functions (16.3%) were compiled, the rest were copied from previous compilation.
+  2 of 441 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    13 functions had inline decision re-evaluated but remain unchanged
+    10 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   何老师.vcxproj -> C:\Users\霖丶\Desktop\616何老师\Lin\Release\何老师.exe
