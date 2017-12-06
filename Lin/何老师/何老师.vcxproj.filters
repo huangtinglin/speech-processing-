@@ -24,6 +24,39 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fft.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="complex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hanning.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IFFT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="enframe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameTimeC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="findSegment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="linsomoothm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pitch_vad.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="meta.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -32,5 +65,10 @@
     <ClCompile Include="何老师.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="何老师.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
