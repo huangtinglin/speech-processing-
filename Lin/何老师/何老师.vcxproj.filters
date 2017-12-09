@@ -57,6 +57,12 @@
     <ClInclude Include="meta.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="pitch_Ceps.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hamming.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

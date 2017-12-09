@@ -3,11 +3,16 @@
 #define _BA_pitch_vad_H_
 
 #include <cmath>
-#include<armadillo>
+#include <armadillo>
 #include "enframe.h"
 #include "fft.h"
 #include "findSegment.h"
 using namespace arma;
+
+int vosl = 0;
+mat Ef;
+mat SF;
+Segment voiceseg(1);
 
 void pitch_vad(mat x, mat wnd, int inc, double T1, int miniL)
 {
@@ -62,7 +67,8 @@ void pitch_vad(mat x, mat wnd, int inc, double T1, int miniL)
 			H(i) = H.max();
 	}
 
-	mat Ef(1, H.n_elem);
+	//Ef.set_size(1, H.n_elem);
+	Ef.set_size(1, H.n_elem);
 	for (i = 0; i < H.n_elem; i++)
 	{
 		Ef(i) = sqrt(1 + fabs(Esum(i) / H(i)));
@@ -86,9 +92,8 @@ void pitch_vad(mat x, mat wnd, int inc, double T1, int miniL)
 	Segment zseg = findSegment(zindex);
 	int zsl = zseg.duration.n_elem;
 	j = 0;
-	mat SF = a.zeros(1, fn);
+	SF = a.zeros(1, fn);
 
-	int vosl = 0;
 	for (k = 0; k < zsl; k++)
 	{
 		if (zseg.duration(k) >= miniL) {
@@ -96,7 +101,7 @@ void pitch_vad(mat x, mat wnd, int inc, double T1, int miniL)
 		}
 	}
 
-	Segment voiceseg(vosl);
+	voiceseg.setSize(vosl);
 	for (k = 0; k < zsl; k++)
 	{
 		if (zseg.duration(k) >= miniL) {
@@ -108,7 +113,6 @@ void pitch_vad(mat x, mat wnd, int inc, double T1, int miniL)
 			j++;
 		}
 	}
-	cout << voiceseg.begin(0) << endl;
 }
 
 

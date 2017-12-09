@@ -17,11 +17,8 @@
 #include<string.h>
 #include<time.h>
 #include<armadillo>
-#include "fft.h"
-#include "enframe.h"
-#include "findSegment.h"
-#include "FrameTimeC.h"
-#include "pitch_vad.h"
+#include "pitch_Ceps.h"
+#include "hamming.h"
 using namespace std;
 using namespace arma;
 
@@ -37,10 +34,7 @@ int main()
 	}
 	mat b(1, 1);
 	b(0) = 256;
-	pitch_vad(x, b, 128, 0.05, 10);
-
-
-	
+	pitch_Ceps(x, b, 128, 0.05, 8000, -1);
 
 	/*mat express(1, 68);
 	for (int i = 0; i < 50; i++) {

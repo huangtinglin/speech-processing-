@@ -149,10 +149,12 @@
     <ClInclude Include="fft.h" />
     <ClInclude Include="findSegment.h" />
     <ClInclude Include="FrameTimeC.h" />
+    <ClInclude Include="hamming.h" />
     <ClInclude Include="hanning.h" />
     <ClInclude Include="IFFT.h" />
     <ClInclude Include="linsomoothm.h" />
     <ClInclude Include="meta.h" />
+    <ClInclude Include="pitch_Ceps.h" />
     <ClInclude Include="pitch_vad.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />

@@ -15,6 +15,12 @@ public:
 		end.set_size(1, n);
 		duration.set_size(1, n);
 	}
+	void setSize(int n)
+	{
+		begin.set_size(1, n);
+		end.set_size(1, n);
+		duration.set_size(1, n);
+	}
 };
 
 /*
