@@ -81,7 +81,7 @@ void pitch_Ceps(mat x, mat wnd, int inc, double T1, double fs, int miniL)
 					maxLc = j - lmin + 1;;
 				}
 			}
-			period(k - 1) = maxLc + lmin - 1;
+			period(k - 1) = maxLc + lmin;
 		}
 	}
 }

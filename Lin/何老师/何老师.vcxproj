@@ -144,6 +144,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="audioRead.h" />
     <ClInclude Include="complex.h" />
     <ClInclude Include="enframe.h" />
     <ClInclude Include="fft.h" />

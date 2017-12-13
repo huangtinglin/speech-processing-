@@ -19,12 +19,45 @@
 #include<armadillo>
 #include "pitch_Ceps.h"
 #include "hamming.h"
+#include "audioRead.h"
+#include "linsomoothm.h"
+#include "FrameTimeC.h"
 using namespace std;
 using namespace arma;
 
 int main()
 {
-	double a;
+	int i, k, j;
+	double inc = 128, T1 = 0.05;
+	mat wlen(1, 1);
+	wlen(0) = 256;
+	audioread("F:\\matlab代码\\何老师_语音\\基频\\tone.wav");
+	x = x - mean(x);
+	mat x1 = x;
+	for (i = 0; i < x1.n_elem; i++)
+		x1(i) = fabs(x(i));
+	mat a = max(x1);
+	x = x / a(0);
+	pitch_Ceps(x, wlen, inc, T1, fs, -1);
+
+	mat F0 = fs / period;
+	
+	for (i = 0; i < SF.n_elem; i++)
+		if (SF(i) == 0)
+			F0(i) = 0;
+	for (i = 0; i < F0.n_elem; i++)
+		if (F0(i) > 500)
+			F0(i) = 500;
+	
+	F0 = linsomoothm(F0, 3);
+	int fn = F0.n_elem;
+	mat tim(1, x.n_elem);
+	for (i = 0; i < x.n_elem; i++)
+		tim(i) = i / fs;
+	mat frameTime = FrameTimeC(fn, wlen(0), inc, fs);
+	cout << F0 << endl;
+
+	/*double a;
 	mat x(27200, 1);
 	int k = 0;
 	freopen("C:\\Users\\霖丶\\Desktop\\616何老师\\x数据.txt", "r", stdin);
@@ -34,7 +67,7 @@ int main()
 	}
 	mat b(1, 1);
 	b(0) = 256;
-	pitch_Ceps(x, b, 128, 0.05, 8000, -1);
+	pitch_Ceps(x, b, 128, 0.05, 8000, -1);*/
 
 	/*mat express(1, 68);
 	for (int i = 0; i < 50; i++) {

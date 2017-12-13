@@ -13,7 +13,7 @@ mat linsomoothm(mat x, int n)
 {
 	if (n == -1)
 		n = 3;
-	mat win = hanning(n);
+	mat win = hanning(n).t();
 	//mat win;
 	//win << 0.75 << endr << 0.75 << endr;
 

@@ -30,13 +30,24 @@ c:\users\霖丶\desktop\616何老师\lin\何老师\pitch_Ceps.h(60): warning C40
 c:\users\霖丶\desktop\616何老师\lin\何老师\pitch_Ceps.h(69): warning C4018: “<”: 有符号/无符号不匹配
 c:\users\霖丶\desktop\616何老师\lin\何老师\pitch_Ceps.h(76): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
 c:\users\霖丶\desktop\616何老师\lin\何老师\pitch_Ceps.h(30): warning C4101: “i”: 未引用的局部变量
-何老师.cpp(30): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(242): note: 参见“freopen”的声明
-何老师.cpp(31): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1272): note: 参见“scanf”的声明
+c:\users\霖丶\desktop\616何老师\lin\何老师\audioRead.h(46): warning C4244: “=”: 从“std::streamoff”转换到“unsigned long”，可能丢失数据
+c:\users\霖丶\desktop\616何老师\lin\何老师\audioRead.h(93): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+c:\users\霖丶\desktop\616何老师\lin\何老师\audioRead.h(97): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(29): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(32): warning C4018: “>=”: 有符号/无符号不匹配
+c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(42): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(45): warning C4018: “>=”: 有符号/无符号不匹配
+何老师.cpp(37): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(45): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(48): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(55): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(57): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(30): warning C4101: “k”: 未引用的局部变量
+何老师.cpp(30): warning C4101: “j”: 未引用的局部变量
   正在生成代码
-  23 of 599 functions ( 3.8%) were compiled, the rest were copied from previous compilation.
-    20 functions were new in current compilation
-    52 functions had inline decision re-evaluated but remain unchanged
+  3 of 776 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    27 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   何老师.vcxproj -> C:\Users\霖丶\Desktop\616何老师\Lin\Release\何老师.exe
