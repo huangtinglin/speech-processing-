@@ -37,17 +37,17 @@ c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(29): warning C4
 c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(32): warning C4018: “>=”: 有符号/无符号不匹配
 c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(42): warning C4018: “<”: 有符号/无符号不匹配
 c:\users\霖丶\desktop\616何老师\lin\何老师\linsomoothm.h(45): warning C4018: “>=”: 有符号/无符号不匹配
-何老师.cpp(37): warning C4018: “<”: 有符号/无符号不匹配
-何老师.cpp(41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
-何老师.cpp(45): warning C4018: “<”: 有符号/无符号不匹配
-何老师.cpp(48): warning C4018: “<”: 有符号/无符号不匹配
-何老师.cpp(55): warning C4018: “<”: 有符号/无符号不匹配
-何老师.cpp(57): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(43): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(47): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(50): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(59): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
 何老师.cpp(30): warning C4101: “k”: 未引用的局部变量
 何老师.cpp(30): warning C4101: “j”: 未引用的局部变量
   正在生成代码
-  3 of 776 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+  1 of 785 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    27 functions had inline decision re-evaluated but remain unchanged
+    20 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   何老师.vcxproj -> C:\Users\霖丶\Desktop\616何老师\Lin\Release\何老师.exe

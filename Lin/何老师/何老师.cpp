@@ -24,14 +24,16 @@
 #include "FrameTimeC.h"
 using namespace std;
 using namespace arma;
-
+//"F:\\matlab代码\\何老师_语音\\基频\\tone.wav"
 int main()
 {
 	int i, k, j;
 	double inc = 128, T1 = 0.05;
+	string path;
 	mat wlen(1, 1);
 	wlen(0) = 256;
-	audioread("F:\\matlab代码\\何老师_语音\\基频\\tone.wav");
+	cout << "path:" << endl; cin >> path;
+	audioread(path);
 	x = x - mean(x);
 	mat x1 = x;
 	for (i = 0; i < x1.n_elem; i++)
@@ -55,7 +57,8 @@ int main()
 	for (i = 0; i < x.n_elem; i++)
 		tim(i) = i / fs;
 	mat frameTime = FrameTimeC(fn, wlen(0), inc, fs);
-	cout << F0 << endl;
+	cout << frameTime << endl;
+	system("pause");
 
 	/*double a;
 	mat x(27200, 1);

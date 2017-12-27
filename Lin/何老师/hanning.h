@@ -50,8 +50,5 @@ mat hanning(int wlen) {
 	}
 }
 
-
-
 #endif // ! HANNING
-
 #pragma once
