@@ -40,10 +40,10 @@ mat enframe(mat x, mat win, int inc) {
 		frameout(k++) = x(a(i) - 1);
 	}
 	frameout.reshape(nf, len);
-
+	
 	if (nwin > 1) {
 		a = win.t();
-		frameout = frameout%repmat(a, nf, 1);
+		frameout = frameout%repmat(a, 1, nf).t();
 	}
 	return frameout;
 }

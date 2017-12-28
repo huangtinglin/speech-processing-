@@ -57,7 +57,10 @@ int main()
 	for (i = 0; i < x.n_elem; i++)
 		tim(i) = i / fs;
 	mat frameTime = FrameTimeC(fn, wlen(0), inc, fs);
-	cout << frameTime << endl;
+	/*cout << "F0:" << endl;
+	for (i = 0; i < F0.n_elem; i++)
+		printf("%lf     ", F0(i));
+	cout << endl;*/
 	system("pause");
 
 	/*double a;
