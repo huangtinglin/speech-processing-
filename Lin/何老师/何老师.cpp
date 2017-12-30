@@ -24,9 +24,11 @@
 #include "FrameTimeC.h"
 using namespace std;
 using namespace arma;
-//"F:\\matlab代码\\何老师_语音\\基频\\tone.wav"
+//tone.wav
+//bluesky1.wav
 int main()
 {
+	cout << 123 << endl;
 	int i, k, j;
 	double inc = 128, T1 = 0.05;
 	string path;
@@ -57,10 +59,10 @@ int main()
 	for (i = 0; i < x.n_elem; i++)
 		tim(i) = i / fs;
 	mat frameTime = FrameTimeC(fn, wlen(0), inc, fs);
-	/*cout << "F0:" << endl;
+	cout << "F0:" << endl;
 	for (i = 0; i < F0.n_elem; i++)
 		printf("%lf     ", F0(i));
-	cout << endl;*/
+	cout << endl;
 	system("pause");
 
 	/*double a;
