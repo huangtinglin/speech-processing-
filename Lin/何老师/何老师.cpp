@@ -28,7 +28,6 @@ using namespace arma;
 //bluesky1.wav
 int main()
 {
-	cout << 123 << endl;
 	int i, k, j;
 	double inc = 128, T1 = 0.05;
 	string path;
