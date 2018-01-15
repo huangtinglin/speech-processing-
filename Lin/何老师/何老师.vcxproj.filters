@@ -66,12 +66,57 @@
     <ClInclude Include="audioRead.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="F0_estimation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="何老师.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="audioRead.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="complex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="enframe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="F0_estimation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fft.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="findSegment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameTimeC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hamming.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hanning.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IFFT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linsomoothm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="meta.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pitch_Ceps.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pitch_vad.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

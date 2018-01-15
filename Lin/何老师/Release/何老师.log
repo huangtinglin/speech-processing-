@@ -1,1 +1,54 @@
-﻿  何老师.vcxproj -> D:\ACM\speech-processing-\Lin\Release\何老师.exe
+﻿  何老师.cpp
+d:\acm\speech-processing-\lin\何老师\enframe.h(13): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\enframe.h(23): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\enframe.h(39): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\enframe.h(40): warning C4244: “参数”: 从“double”转换到“const arma::uword”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\findSegment.h(39): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\findSegment.h(48): warning C4018: “<=”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\findSegment.h(55): warning C4018: “<=”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(25): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(38): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(43): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(58): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(64): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(72): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(79): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(87): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_vad.h(111): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\meta.h(21): warning C4018: “<=”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\meta.h(22): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\hamming.h(14): warning C4101: “j”: 未引用的局部变量
+d:\acm\speech-processing-\lin\何老师\IFFT.h(4): warning C4005: “PI”: 宏重定义
+  d:\acm\speech-processing-\lin\何老师\fft.h(8): note: 参见“PI”的前一个定义
+d:\acm\speech-processing-\lin\何老师\IFFT.h(71): warning C4101: “i”: 未引用的局部变量
+d:\acm\speech-processing-\lin\何老师\IFFT.h(108): warning C4101: “i”: 未引用的局部变量
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(14): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(15): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(35): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(53): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(60): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(69): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(76): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\pitch_Ceps.h(30): warning C4101: “i”: 未引用的局部变量
+d:\acm\speech-processing-\lin\何老师\audioRead.h(46): warning C4244: “=”: 从“std::streamoff”转换到“unsigned long”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\audioRead.h(93): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\audioRead.h(97): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+d:\acm\speech-processing-\lin\何老师\linsomoothm.h(29): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\linsomoothm.h(32): warning C4018: “>=”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\linsomoothm.h(42): warning C4018: “<”: 有符号/无符号不匹配
+d:\acm\speech-processing-\lin\何老师\linsomoothm.h(45): warning C4018: “>=”: 有符号/无符号不匹配
+何老师.cpp(40): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(44): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(48): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(58): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(60): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+何老师.cpp(62): warning C4018: “<”: 有符号/无符号不匹配
+何老师.cpp(31): warning C4101: “k”: 未引用的局部变量
+何老师.cpp(31): warning C4101: “j”: 未引用的局部变量
+  正在生成代码
+  0 of 767 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  何老师.vcxproj -> D:\ACM\speech-processing-\Lin\Release\何老师.exe

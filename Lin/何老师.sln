@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "何老师", "何老师\何老师.vcxproj", "{A424111B-F535-44F3-AAC3-79E5C22B485D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "untitled", "项目作图\untitled.vcxproj", "{CAD64570-FD4B-3D71-BA17-013C947435DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,17 @@ Global
 		{A424111B-F535-44F3-AAC3-79E5C22B485D}.Release|x64.Build.0 = Release|x64
 		{A424111B-F535-44F3-AAC3-79E5C22B485D}.Release|x86.ActiveCfg = Release|Win32
 		{A424111B-F535-44F3-AAC3-79E5C22B485D}.Release|x86.Build.0 = Release|Win32
+		{CAD64570-FD4B-3D71-BA17-013C947435DB}.Debug|x64.ActiveCfg = Debug|x64
+		{CAD64570-FD4B-3D71-BA17-013C947435DB}.Debug|x64.Build.0 = Debug|x64
+		{CAD64570-FD4B-3D71-BA17-013C947435DB}.Debug|x86.ActiveCfg = Debug|x64
+		{CAD64570-FD4B-3D71-BA17-013C947435DB}.Release|x64.ActiveCfg = Release|x64
+		{CAD64570-FD4B-3D71-BA17-013C947435DB}.Release|x64.Build.0 = Release|x64
+		{CAD64570-FD4B-3D71-BA17-013C947435DB}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9102D030-995C-4BC2-BFBE-9860B0FAF3B2}
 	EndGlobalSection
 EndGlobal
